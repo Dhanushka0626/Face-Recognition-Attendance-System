@@ -2,8 +2,8 @@ import tkinter as tk
 from tkinter import messagebox
 
 def get_button(window, text, color, command, fg='White'):
-    button = tk.Button(window, text=text, bg=color, fg=fg, command=command, activebackground='black', activeforeground='white')
-    button.config(font=("Arial", 12), width=20, height=2)
+    button = tk.Button(window, text=text, bg=color, fg=fg, command=command, activebackground='#555555', activeforeground='#FFFFFF')
+    button.config(font=("Arial", 12, "bold"), width=20, height=1)
     return button
 
 def get_img_label(window):
@@ -17,7 +17,7 @@ def get_txt_label(window, text):
     return label
 
 def get_entry_text(window):
-    inputtxt = tk.Text(window,height=2,width=15,font=("Arail", 32))
+    inputtxt = tk.Text(window,height=1,width=15,font=("Arail", 12))
     return inputtxt
 
 def msg_box(title, description):
